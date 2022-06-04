@@ -3,8 +3,11 @@
 
 A web app purely made with django, A framework of python and html and css.
 
+## Home Page
 ![home](https://github.com/Rajkaranm/spacehub/blob/master/img/home.jpg)
+## gallery Page
 ![gallery](https://github.com/Rajkaranm/spacehub/blob/master/img/gallery.jpg)
+## Explore Page
 ![explore](https://github.com/Rajkaranm/spacehub/blob/master/img/explore.jpg)
 
 ## Features
