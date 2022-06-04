@@ -1,0 +1,156 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!-- Main Title -->
+
+<h1 id="main-title">The Solar System simulation</h1>
+
+<!-- Planet List -->
+<ul id="planet-list">
+	<li id="sun-link">
+		<h3>Sun</h3>
+	</li>
+	<li id="mercury-link">
+		<h3>Mercury</h3>
+	</li>
+	<li id="venus-link">
+		<h3>Venus</h3>
+	</li>
+	<li id="earth-link">
+		<h3>Earth</h3>
+	</li>
+	<li id="mars-link">
+		<h3>Mars</h3>
+	</li>
+	<li id="jupiter-link">
+		<h3>Jupiter</h3>
+	</li>
+	<li id="saturn-link">
+		<h3>Saturn</h3>
+	</li>
+	<li id="uranus-link">
+		<h3>Uranus</h3>
+	</li>
+	<li id="neptune-link">
+		<h3>Neptune</h3>
+	</li>
+</ul>
+
+<!-- Planet Orbit -->
+<div id="orbit-container" data-aos="flip-right">
+	<div id="sun"></div>
+	<div id="mercury-orbit" class="orbit">
+		<div id="mercury"></div>
+	</div>
+	<div id="venus-orbit" class="orbit">
+		<div id="venus"></div>
+	</div>
+	<div id="earth-orbit" class="orbit">
+		<div id="earth"></div>
+	</div>
+	<div id="mars-orbit" class="orbit">
+		<div id="mars"></div>
+	</div>
+	<div id="jupiter-orbit" class="orbit">
+		<div id="jupiter"></div>
+	</div>
+	<div id="saturn-orbit" class="orbit">
+		<div id="saturn"></div>
+		<div id="saturn-ring"></div>
+	</div>
+	<div id="uranus-orbit" class="orbit">
+		<div id="uranus"></div>
+	</div>
+	<div id="neptune-orbit" class="orbit">
+		<div id="neptune"></div>
+	</div>
+</div>
+
+<hr>
+
+
+<h1 style="text-align: center;">All planets in our solar system.</h1>
+<div class="planet-cards" >
+	<div class="ui-card" data-aos="fade-left">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg">
+		<div class="description">
+			<h3>Mercury</h3>
+			<p>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun
+				takes 87.97 Earth days, the shortest of all the Sun's planets.</p>
+			<a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-up">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Venus_from_Mariner_10.jpg/330px-Venus_from_Mariner_10.jpg">
+		<div class="description">
+			<h3>Venus</h3>
+			<p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the
+				brightest natural object in Earth's night sky after the Moon,</p>
+			<a href="https://en.wikipedia.org/wiki/Earth" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-right">
+		<img src="{% static 'home/earth.jpg' %}">
+		<div class="description">
+			<h3>Earth</h3>
+			<p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large
+				amounts of water can be found throughout the Solar System, only Earth sustains liquid surface water.</p>
+			<a href="https://en.wikipedia.org/wiki/Earth" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-left">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/330px-OSIRIS_Mars_true_color.jpg">
+		<div class="description">
+			<h3>Mars</h3>
+			<p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger
+				than only Mercury.</p>
+			<a href="https://en.wikipedia.org/wiki/Mars" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-up">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg/330px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg">
+		<div class="description">
+			<h3>Jupiter</h3>
+			<p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a
+				mass more than two and a half times that of all the other planets in the Solar System combined</p>
+			<a href="https://en.wikipedia.org/wiki/Jupiter" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-right">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/450px-Saturn_during_Equinox.jpg">
+		<div class="description">
+			<h3>Saturn</h3>
+			<p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is
+				a gas giant with an average radius of about nine and a half times that of Earth</p>
+			<a href="https://en.wikipedia.org/wiki/Saturn" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-left">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Uranus_true_colour.jpg/330px-Uranus_true_colour.jpg">
+		<div class="description">
+			<h3>Uranus</h3>
+			<p>Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus,
+				who, according to Greek mythology, was the great-grandfather of Ares (Mars)</p>
+			<a href="https://en.wikipedia.org/wiki/Uranus" target="blankj">Read More</a>
+		</div>
+	</div>
+	<div class="ui-card" data-aos="fade-right">
+		<img
+			src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/330px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg">
+		<div class="description">
+			<h3>Neptune</h3>
+			<p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the
+				fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.</p>
+			<a href="https://en.wikipedia.org/wiki/Earth" target="blankj">Read More</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

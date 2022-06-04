@@ -1,0 +1,16 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<h1 style="text-align: center; margin-top: 5rem;" >Space Gallery</h1>
+<div class="gallery_image">
+
+    {% for data in mars_image %}
+    <div class="card" style="width: 40rem; margin: 3rem;">
+        <img class="card-img-top" src="{{ data.url }}" alt="Card image cap">
+        <div class="card-body">
+            <h4>Title: {{ data.title }}</h4>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

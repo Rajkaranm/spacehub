@@ -1,0 +1,48 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+    <div id="image_of_the_day">
+        <h1 class="main_titles" data-aos="fade-down">NASA's Astronomy Picture of the Day.</h1>
+        <div class="img">
+            <img src="{{ data_image_of_day.url }}" alt="" data-aos="flip-up">
+        </div>
+        <div class="info" data-aos="fade-up">
+            <h3>{{ data_image_of_day.title }}</h3>
+            <p> <b>Description:</b>  {{ data_image_of_day.explanation }}</p>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+    <h2 class="main_titles">Space News</h2>
+    <div class="space_news">
+        {% for news in data_news %}
+            <div class="card" style="width: 18rem;" data-aos="fade-up">
+                <img src="{{ news.imageUrl }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ news.title }}</h5>
+                    <p class="card-text">{{ news.summary }}</p>
+                    <a href="{{ news.url }}" target="_blank" class="btn btn-primary">READ MORE</a>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div> 
+
+    <hr>
+    <h2 class="main_titles">People who are currently in space</h2>
+    <div class="container">
+        {% for data in data_people %}
+        <div class="card mb-3" data-aos="fade-down-left">
+            <div class="card-body">
+                Name: {{ data.name }} <br>
+                Craft: {{ data.craft }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
