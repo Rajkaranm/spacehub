@@ -23,7 +23,7 @@ A web app purely made with django, A framework of python and html and css.
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
+SpaceHub requires Python to run.
 
 Install the dependencies and devDependencies and start the server.
 
